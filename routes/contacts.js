@@ -13,6 +13,4 @@ router.get("/:id", contactsController.getSingle);
 
 // router.delete("/:id", contactsController.remove);
 
-console.log("routes contacts.js is connected");
-
 module.exports = router;

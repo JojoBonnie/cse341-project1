@@ -21,7 +21,6 @@ const getSingle = async (req, res) => {
   res.status(200).json(result);
 };
 
-console.log("controller contacts.js is connected");
 module.exports = { 
     getAll,
     getSingle

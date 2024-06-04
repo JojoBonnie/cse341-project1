@@ -1,0 +1,5 @@
+###
+GET http://localhost:8080/contacts HTTP/1.1
+
+###
+GET https://cse341-project1.onrender.com/contacts HTTP/1.1
