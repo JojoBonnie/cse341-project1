@@ -1,5 +1,13 @@
-### Local Development
-GET http://localhost:8080/contacts HTTP/1.1
+// Local Development
+### retrieve all contacts
+GET http://localhost:3000/contacts HTTP/1.1
 
-### Production
+### retrieve a single contact
+GET http://localhost:3000/contacts/665f68164204cdfecfd0a84c HTTP/1.1
+
+// Production
+### retrieve all contacts
 GET https://cse341project1-jgs5.onrender.com/contacts HTTP/1.1
+
+### retrieve a single contact
+GET https://cse341project1-jgs5.onrender.com/contacts/665f68164204cdfecfd0a84c HTTP/1.1
