@@ -15,9 +15,9 @@ const swaggerOptions = {
         'A simple contacts API. This was created as part of a project on creating a REST API with Node.js and Express.',
       version: '1.0.0'
     },
-    host: process.env.HOST || 'localhost:3000',
+    host: process.env.HOST,
     basePath: '/',
-    schemes: ['http', 'https'],
+    schemes: [process.env.HTTP_PROTOCOL],
     produces: ['application/json'],
     consumes: ['application/json'],
     definitions: {
@@ -45,7 +45,7 @@ const uiOptions = {
 // Initialize swagger-jsdoc
 const swaggerDocument = swaggerJsDoc(swaggerOptions);
 
-// const swaggerDocument = require('../swagger_output.json');
+// const swaggerDocument = require('../swagger.json');
 
 // Set up Swagger UI
 router.use('/', swaggerUi.serve);
