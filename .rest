@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### update a contact
-PUT http://localhost:3000/contacts/665f68164204cdfecfd0a84d HTTP/1.1
+PUT http://localhost:3000/contacts/6675584976862e190e738341 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
 }
 
 ### delete a contact
-DELETE http://localhost:3000/contacts/66618268df49c4be5192d470 HTTP/1.1
+DELETE http://localhost:3000/contacts/6675577a2e157bf7b39d334e HTTP/1.1
 
 
 // Production
@@ -46,7 +46,7 @@ POST https://cse341project1-jgs5.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "Jojo",
+  "firstName": "Joe",
   "lastName": "Masebe",
   "email": "masebe.j@lds.org",
   "favoriteColor": "Navy Blue",
@@ -66,4 +66,4 @@ Content-Type: application/json
 }
 
 ### delete a contact
-DELETE https://cse341project1-jgs5.onrender.com/contacts/6661540e058c9b0bee21df5b HTTP/1.1
+DELETE https://cse341project1-jgs5.onrender.com/contacts/6675572d2e157bf7b39d334d HTTP/1.1

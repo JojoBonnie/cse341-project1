@@ -44,13 +44,9 @@ const createContact = async (req, res) => {
       .getDb()
       .collection("contacts")
       .insertOne(contact);
-    if (result.insertedCount === 1) {
-      res.status(201).json({ message: "Contact created" });
-    } else {
-      res
-        .status(500)
-        .json({ message: "Failed to create contact: result issue" });
-    }
+    
+    res.status(201).json({ message: "Contact created" });
+
   } catch (err) {
     res.status(500).json({ message: "Failed to create contact: try issue" });
   }
